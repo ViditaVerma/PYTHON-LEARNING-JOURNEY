@@ -1,0 +1,16 @@
+
+NAME=input("enter your NAME: ")
+AGE=input("enter your AGE : ")
+COLLEGE=input("enter your COLLEGE : ")
+COURSE=input("enter your COURSE : ")
+CITY=input("enter your CITY : ")
+CGPA=input("enter your CGPA : ")
+
+print("============== STUDENT DETAILS =============")
+print(f"NAME    :{NAME}")
+print(f"AGE     :{AGE}")
+print(f"COLLEGE :{COLLEGE}")
+print(f"COURSE  :{COURSE}")
+print(f"CITY    :{CITY}")
+print(f"CGPA    :{CGPA}")
+print("=============================================")
