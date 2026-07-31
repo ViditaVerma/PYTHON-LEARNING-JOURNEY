@@ -41,3 +41,97 @@
 * [x] Type Casting
 * [x] f-Strings
 * [x] Arithmetic Operators
+
+## 📅 Day 2 (30 July 2026)
+
+### ✅ Topics Learned
+
+* Arithmetic Operators (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
+* Assignment Operators (`+=`, `-=`, `*=`, `/=`)
+* Comparison Operators (`==`, `!=`, `>`, `<`, `>=`, `<=`)
+* Boolean Values (`True`, `False`)
+
+### 💡 Key Learnings
+
+* `/` always returns a float.
+* `//` returns the whole-number quotient (floor division).
+* `%` returns the remainder.
+* `**` is used for exponent (power).
+* `==` compares values, while `=` assigns a value.
+* Comparison operators return `True` or `False`.
+
+### 🧠 Interview Learnings
+
+* `"21" == 21` → `False` (string vs integer)
+* `"9" > "10"` → `True` (strings are compared character by character)
+* String comparison is based on Unicode values, not string length.
+* Python is case-sensitive (`"Vidita"` ≠ `"vidita"`).
+
+### ⚠️ Common Mistakes
+
+* Don't use `sum` as a variable name.
+* Don't confuse `=` with `==`.
+* Don't use `/` when you need `//`.
+* Use meaningful variable names.
+
+### 🛠️ Programs Completed
+
+* Operator Calculator
+* Salary Calculator
+* Classroom Calculator
+* Movie Ticket Price (Operators Practice)
+
+### 📌 Revision Checklist
+
+* [x] Arithmetic Operators
+* [x] Assignment Operators
+* [x] Comparison Operators
+* [x] Boolean Values
+
+## 📅 Day 3 (31 July 2026)
+
+### ✅ Topics Learned
+
+* `if`
+* `elif`
+* `else`
+* Decision Making
+* Conditional Execution
+
+### 💡 Key Learnings
+
+* `if` executes only when the condition is `True`.
+* `else` executes when all previous conditions are `False`.
+* `elif` is used to check multiple conditions.
+* Python checks conditions from top to bottom and stops after the first matching condition.
+* Correct ordering of conditions is important.
+
+### 🧠 Interview Learnings
+
+* Use `==` for comparison and `=` for assignment.
+* Always test boundary values (e.g., age 5, 18, 60).
+* Proper indentation is required in Python.
+* Conditions should be written from most specific/highest priority to lowest when needed.
+
+### ⚠️ Common Mistakes
+
+* Writing `=` instead of `==` inside an `if`.
+* Incorrect order of `elif` conditions.
+* Forgetting to handle edge cases.
+* Inconsistent variable names.
+
+### 🛠️ Programs Completed
+
+* Voting Eligibility Checker
+* Grade Calculator
+* Login Validation
+* Movie Ticket Price Checker
+* Comparison Practice
+
+### 📌 Revision Checklist
+
+* [x] if
+* [x] elif
+* [x] else
+* [x] Boolean Logic
+* [x] Conditional Statements

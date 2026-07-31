@@ -1,16 +1,9 @@
-
-NAME=input("enter your NAME: ")
-AGE=input("enter your AGE : ")
-COLLEGE=input("enter your COLLEGE : ")
-COURSE=input("enter your COURSE : ")
-CITY=input("enter your CITY : ")
-CGPA=input("enter your CGPA : ")
-
-print("============== STUDENT DETAILS =============")
-print(f"NAME    :{NAME}")
-print(f"AGE     :{AGE}")
-print(f"COLLEGE :{COLLEGE}")
-print(f"COURSE  :{COURSE}")
-print(f"CITY    :{CITY}")
-print(f"CGPA    :{CGPA}")
-print("=============================================")
+age=int(input("ENTER YOUR AGE :"))
+if(age <= 5):
+    print("free tickets")
+elif(age <= 17):
+    print(" ticket price is 150")
+elif(age <= 59):
+    print( "ticket price is 250")   
+else:
+    print("ticket price id 100")   
