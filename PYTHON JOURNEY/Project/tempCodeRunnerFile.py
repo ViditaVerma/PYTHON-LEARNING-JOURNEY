@@ -1,9 +1,12 @@
-age=int(input("ENTER YOUR AGE :"))
-if(age <= 5):
-    print("free tickets")
-elif(age <= 17):
-    print(" ticket price is 150")
-elif(age <= 59):
-    print( "ticket price is 250")   
-else:
-    print("ticket price id 100")   
+attempt=1
+while True:    
+ pin=int(input("ENTER THE ATM PIN :"))
+ if pin == 1234:
+  print("ACCESS GRANTED")
+  break
+ attempt += 1
+ if pin != 1234:
+  print("WRONG PIN ")
+ if attempt == 3:
+   print("CARD BLOCK")
+   break

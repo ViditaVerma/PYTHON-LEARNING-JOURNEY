@@ -135,3 +135,103 @@
 * [x] else
 * [x] Boolean Logic
 * [x] Conditional Statements
+
+# 📅 Day 4 - Logical Operators & For Loop
+
+## ✅ Topics Learned
+- Logical Operators:
+  - and
+  - or
+  - not
+- Combining multiple conditions
+- Introduction to for loop
+- range(start, stop, step)
+- Loop variable (i)
+- Multiplication Table using for loop
+
+## 🧠 Key Concepts
+
+### and
+Returns True only if all conditions are True.
+
+Example:
+if age >= 18 and has_id == "yes"
+
+### or
+Returns True if at least one condition is True.
+
+Example:
+if is_student == "yes" or has_coupon == "yes"
+
+### not
+Reverses a Boolean value.
+
+Example:
+not True  → False
+not False → True
+
+### for Loop
+Used when we know how many times to repeat something.
+
+Syntax:
+for i in range(start, stop, step):
+
+## ⚠️ Mistakes I Made
+- Used = instead of == inside if conditions.
+- Confused the use of not.
+- Thought step meant "counting" instead of "adding".
+- Forgot that the stop value is not included.
+
+## 💡 Summary
+- Use and when every condition must be True.
+- Use or when any one condition is enough.
+- Use not to reverse True/False.
+- range(start, stop, step)
+- Stop value is excluded.
+
+# 📅 Day 5 - While Loop
+
+## ✅ Topics Learned
+- while loop
+- while True
+- break
+- continue
+- ATM PIN Verification Mini Project
+
+## 🧠 Key Concepts
+
+### while
+Repeats while a condition is True.
+
+Example:
+while count <= 5:
+
+### while True
+Creates an infinite loop.
+The loop runs until break is executed.
+
+### break
+Stops the current loop immediately.
+
+### continue
+Skips the remaining code of the current iteration and starts the next iteration.
+
+### attempt += 1
+Shortcut for:
+attempt = attempt + 1
+
+Used to increase a counter.
+
+## ⚠️ Mistakes I Made
+- Thought while True prints forever automatically.
+- Thought break ends the whole program.
+- Confused break with continue.
+- Didn't understand why input() is inside the loop.
+- Forgot that break is only used when we want to exit the loop completely.
+
+## 💡 Summary
+- while is used when the number of repetitions is unknown.
+- while True is useful for login systems and menus.
+- break exits the loop.
+- continue skips the current iteration.
+- Counters are commonly updated using += 1.
