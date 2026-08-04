@@ -235,3 +235,472 @@ Used to increase a counter.
 - break exits the loop.
 - continue skips the current iteration.
 - Counters are commonly updated using += 1.
+
+# 🐍 Day 6 - Functions
+
+## 📚 Topics Covered
+- Functions
+- Function Calling
+- Parameters
+- Multiple Parameters
+- Return
+- Boolean Return
+- Functions Calling Functions
+- Student Result Mini Project
+
+---
+
+## What is a Function?
+
+A function is a reusable block of code that performs a specific task.
+
+Syntax:
+
+```python
+def function_name():
+    # code
+```
+
+Example:
+
+```python
+def greet():
+    print("Hello")
+```
+
+Calling a function:
+
+```python
+greet()
+```
+
+---
+
+## Parameters
+
+Parameters allow us to pass values into a function.
+
+Example:
+
+```python
+def student(name):
+    print(f"Hello {name}")
+
+student("Vidita")
+```
+
+---
+
+## Multiple Parameters
+
+```python
+def add(a, b):
+    print(a + b)
+```
+
+---
+
+## Return
+
+The `return` keyword sends a value back from a function.
+
+Example:
+
+```python
+def add(a, b):
+    return a + b
+
+answer = add(5, 4)
+print(answer)
+```
+
+### Difference Between print() and return()
+
+| print() | return |
+|---------|---------|
+| Displays output | Sends value back |
+| Cannot be reused | Can be stored in a variable |
+| Ends after printing | Can be used later |
+
+---
+
+## Returning Boolean Values
+
+```python
+def is_even(number):
+    if number % 2 == 0:
+        return True
+    else:
+        return False
+```
+
+---
+
+## Function Calling Another Function
+
+```python
+def get_grade(marks):
+    return "A"
+
+def student_result():
+    print(get_grade(95))
+```
+
+---
+
+## Mini Project
+
+🎓 Student Result System
+
+Concepts Used:
+- Functions
+- Parameters
+- Return
+- if-elif-else
+- Boolean Values
+
+---
+
+## Common Mistakes
+
+❌ Forgetting ()
+
+```python
+greet
+```
+
+✅ Correct
+
+```python
+greet()
+```
+
+---
+
+❌ Forgetting Parameters
+
+```python
+student()
+```
+
+✅ Correct
+
+```python
+student("Vidita")
+```
+
+---
+
+❌ Forgetting to print a returned value
+
+```python
+add(4,5)
+```
+
+✅ Correct
+
+```python
+print(add(4,5))
+```
+
+or
+
+```python
+answer = add(4,5)
+print(answer)
+```
+
+---
+
+## Key Points
+
+- Functions reduce code repetition.
+- Parameters make functions flexible.
+- return sends a value back.
+- print() only displays output.
+- Functions can call other functions.
+
+---
+
+## Status
+
+✅ Day 6 Completed
+
+# 🐍 Day 7 - Lists
+
+## 📚 Topics Covered
+
+- Lists
+- Indexing
+- Negative Indexing
+- Nested Indexing
+- Updating Elements
+- len()
+- append()
+- insert()
+- remove()
+- pop()
+- sort()
+- reverse()
+- in / not in
+- for Loop with Lists
+
+---
+
+## What is a List?
+
+A list stores multiple values inside a single variable.
+
+Lists are:
+- Ordered
+- Mutable
+- Allow duplicate values
+
+Example:
+
+```python
+fruits = ["Apple", "Banana", "Mango"]
+```
+
+---
+
+## Indexing
+
+Positive Indexing:
+
+```text
+Apple   Banana   Mango
+0        1        2
+```
+
+Negative Indexing:
+
+```text
+Apple   Banana   Mango
+-3       -2       -1
+```
+
+Example:
+
+```python
+print(fruits[0])
+print(fruits[-1])
+```
+
+---
+
+## Updating Elements
+
+```python
+fruits[1] = "Orange"
+```
+
+---
+
+## len()
+
+Returns the total number of elements.
+
+```python
+print(len(fruits))
+```
+
+---
+
+## Nested Indexing
+
+```python
+fruits[-1][1]
+```
+
+Step 1:
+
+```python
+fruits[-1]
+```
+
+↓
+
+```text
+"Mango"
+```
+
+Step 2:
+
+```python
+"Mango"[1]
+```
+
+↓
+
+```text
+a
+```
+
+---
+
+# List Methods
+
+## append()
+
+Adds an element at the end.
+
+```python
+fruits.append("Orange")
+```
+
+---
+
+## insert()
+
+Adds an element at a specific index.
+
+```python
+fruits.insert(1, "Orange")
+```
+
+---
+
+## remove()
+
+Removes an element using its value.
+
+```python
+fruits.remove("Banana")
+```
+
+---
+
+## pop()
+
+Removes an element using its index.
+
+```python
+fruits.pop(1)
+```
+
+If no index is given:
+
+```python
+fruits.pop()
+```
+
+It removes the last element.
+
+---
+
+## sort()
+
+Sorts the list in ascending order.
+
+```python
+numbers.sort()
+```
+
+---
+
+## reverse()
+
+Reverses the order of the list.
+
+```python
+numbers.reverse()
+```
+
+---
+
+## in Operator
+
+Checks if an element exists.
+
+```python
+print("SQL" in subjects)
+```
+
+---
+
+## not in Operator
+
+Checks if an element does not exist.
+
+```python
+print("Java" not in subjects)
+```
+
+---
+
+## for Loop with Lists
+
+```python
+fruits = ["Apple", "Banana", "Mango"]
+
+for fruit in fruits:
+    print(fruit)
+```
+
+The loop stores one element at a time in the variable.
+
+---
+
+## Difference
+
+### append() vs insert()
+
+| append() | insert() |
+|-----------|----------|
+| Adds at the end | Adds at a specific index |
+
+---
+
+### remove() vs pop()
+
+| remove() | pop() |
+|-----------|--------|
+| Removes by value | Removes by index |
+| Doesn't return removed element | Returns removed element |
+
+---
+
+## Common Mistakes
+
+❌ Using remove() with an index.
+
+```python
+fruits.remove(1)
+```
+
+✅ Correct
+
+```python
+fruits.pop(1)
+```
+
+---
+
+❌ Confusing value and index.
+
+❌ Forgetting indexing starts from 0.
+
+❌ Forgetting negative indexing starts from -1.
+
+---
+
+## Key Points
+
+- Lists are mutable.
+- Positive indexing starts from 0.
+- Negative indexing starts from -1.
+- append() adds at the end.
+- insert() adds at a specific index.
+- remove() removes by value.
+- pop() removes by index.
+- sort() arranges elements.
+- reverse() reverses the order.
+- in and not in check membership.
+- for loop is used to traverse a list.
+
+---
+
+## Status
+
+✅ Day 7 Completed
