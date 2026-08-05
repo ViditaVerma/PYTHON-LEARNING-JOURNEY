@@ -704,3 +704,857 @@ fruits.pop(1)
 ## Status
 
 ✅ Day 7 Completed
+# 📅 Day 8 - Python Notes
+# Topic: Tuples & Dictionaries
+
+---
+
+# 🔹 Tuple
+
+A tuple is an ordered collection of items.
+
+- Written using ()
+- Ordered
+- Allows duplicate values
+- Cannot be modified (Immutable)
+
+Example:
+
+```python
+fruits = ("Apple", "Banana", "Mango")
+```
+
+---
+
+# 🔹 Accessing Tuple Elements
+
+```python
+fruits = ("Apple", "Banana", "Mango")
+
+print(fruits[0])      # Apple
+print(fruits[-1])     # Mango
+```
+
+---
+
+# 🔹 Tuple Length
+
+```python
+print(len(fruits))
+```
+
+Output:
+
+```
+3
+```
+
+---
+
+# 🔹 Loop Through a Tuple
+
+```python
+for fruit in fruits:
+    print(fruit)
+```
+
+Output:
+
+```
+Apple
+Banana
+Mango
+```
+
+---
+
+# 🔹 Single Element Tuple
+
+Wrong:
+
+```python
+number = (5)
+```
+
+This is an integer.
+
+Correct:
+
+```python
+number = (5,)
+```
+
+The comma makes it a tuple.
+
+---
+
+# 🔹 Dictionary
+
+A dictionary stores data as Key : Value pairs.
+
+- Written using {}
+- Keys are unique
+- Values can be duplicated
+- Data is accessed using keys instead of indexes
+
+Example:
+
+```python
+student = {
+    "name": "Vidita",
+    "age": 21,
+    "course": "BCA"
+}
+```
+
+---
+
+# 🔹 Access Values
+
+```python
+print(student["name"])
+print(student["age"])
+```
+
+Output:
+
+```
+Vidita
+21
+```
+
+---
+
+# 🔹 Add or Update Values
+
+```python
+student["city"] = "Delhi"
+
+student["age"] = 22
+```
+
+---
+
+# 🔹 get()
+
+Safely access a value.
+
+```python
+print(student.get("course"))
+```
+
+If the key doesn't exist:
+
+```python
+print(student.get("salary"))
+```
+
+Output:
+
+```
+None
+```
+
+Provide a default value:
+
+```python
+print(student.get("salary", "Not Found"))
+```
+
+Output:
+
+```
+Not Found
+```
+
+---
+
+# 🔹 keys()
+
+Returns all keys.
+
+```python
+print(student.keys())
+```
+
+Output:
+
+```
+dict_keys(['name', 'age', 'course'])
+```
+
+---
+
+# 🔹 values()
+
+Returns all values.
+
+```python
+print(student.values())
+```
+
+Output:
+
+```
+dict_values(['Vidita', 21, 'BCA'])
+```
+
+---
+
+# 🔹 items()
+
+Returns key-value pairs.
+
+```python
+print(student.items())
+```
+
+Output:
+
+```
+dict_items([
+('name', 'Vidita'),
+('age', 21),
+('course', 'BCA')
+])
+```
+
+---
+
+# 🔹 Loop Through Dictionary Keys
+
+```python
+for key in student:
+    print(key)
+```
+
+Output:
+
+```
+name
+age
+course
+```
+
+---
+
+# 🔹 Loop Through Dictionary Values
+
+```python
+for value in student.values():
+    print(value)
+```
+
+Output:
+
+```
+Vidita
+21
+BCA
+```
+
+---
+
+# 🔹 Loop Through Dictionary (Keys + Values)
+
+```python
+for key, value in student.items():
+    print(f"{key} : {value}")
+```
+
+Output:
+
+```
+name : Vidita
+age : 21
+course : BCA
+```
+
+---
+
+# ⭐ Interview Questions
+
+### Difference between List and Dictionary
+
+| List | Dictionary |
+|------|------------|
+| Uses [] | Uses {} |
+| Access by Index | Access by Key |
+| Ordered | Key-Value Pair |
+
+---
+
+### Difference between student["city"] and student.get("city")
+
+```python
+student["city"]
+```
+
+- Gives **KeyError** if the key doesn't exist.
+
+```python
+student.get("city")
+```
+
+- Returns **None** (or a default value if provided) instead of an error.
+
+---
+
+### Difference between Tuple and List
+
+| List | Tuple |
+|------|-------|
+| Mutable | Immutable |
+| Uses [] | Uses () |
+| Can be modified | Cannot be modified |
+
+---
+
+# 📝 Mini Project: Student Information System
+
+Concepts Used:
+
+- Dictionary
+- User Input
+- Loop
+- items()
+- get()
+
+Example:
+
+```python
+student = {}
+
+student["name"] = input("Enter your name: ")
+student["age"] = int(input("Enter your age: "))
+student["course"] = input("Enter your course: ")
+
+print("\n===== STUDENT DETAILS =====")
+
+for key, value in student.items():
+    print(f"{key} : {value}")
+
+field = input("\nEnter field to search: ")
+
+print(student.get(field, "Oops! Not Found"))
+```
+
+---
+
+# 📚 Day 8 Summary
+
+✅ Tuples
+
+✅ Tuple Indexing
+
+✅ Tuple Looping
+
+✅ Dictionary
+
+✅ Key-Value Pairs
+
+✅ Add & Update Values
+
+✅ get()
+
+✅ keys()
+
+✅ values()
+
+✅ items()
+
+✅ Loop Through Dictionary
+
+✅ Student Information System Mini Project
+# 📅 Day 8 - Python Notes
+# Topic: Tuples, Dictionaries & Sets
+
+---
+
+# 🔹 Tuple
+
+A tuple is an ordered collection of items.
+
+- Uses ()
+- Ordered
+- Allows duplicate values
+- Immutable (Cannot be changed)
+
+Example:
+
+```python
+fruits = ("Apple", "Banana", "Mango")
+```
+
+---
+
+# 🔹 Tuple Indexing
+
+```python
+fruits = ("Apple", "Banana", "Mango")
+
+print(fruits[0])      # Apple
+print(fruits[-1])     # Mango
+```
+
+---
+
+# 🔹 Tuple Length
+
+```python
+print(len(fruits))
+```
+
+---
+
+# 🔹 Loop Through Tuple
+
+```python
+for fruit in fruits:
+    print(fruit)
+```
+
+---
+
+# 🔹 Single Element Tuple
+
+Wrong
+
+```python
+number = (5)
+```
+
+Correct
+
+```python
+number = (5,)
+```
+
+A comma makes it a tuple.
+
+---
+
+# 🔹 Dictionary
+
+A dictionary stores data in **Key : Value** pairs.
+
+- Uses {}
+- Keys are unique.
+- Values can be duplicate.
+- Access data using keys instead of indexes.
+
+Example
+
+```python
+student = {
+    "name": "Vidita",
+    "age": 21,
+    "course": "BCA"
+}
+```
+
+---
+
+# 🔹 Access Values
+
+```python
+print(student["name"])
+print(student["age"])
+```
+
+---
+
+# 🔹 Add or Update Data
+
+```python
+student["city"] = "Delhi"
+
+student["age"] = 22
+```
+
+---
+
+# 🔹 get()
+
+Safely accesses a value.
+
+```python
+print(student.get("course"))
+```
+
+If the key doesn't exist:
+
+```python
+print(student.get("salary"))
+```
+
+Output
+
+```
+None
+```
+
+Default value:
+
+```python
+print(student.get("salary", "Not Found"))
+```
+
+---
+
+# 🔹 keys()
+
+Returns all keys.
+
+```python
+print(student.keys())
+```
+
+---
+
+# 🔹 values()
+
+Returns all values.
+
+```python
+print(student.values())
+```
+
+---
+
+# 🔹 items()
+
+Returns key-value pairs.
+
+```python
+print(student.items())
+```
+
+---
+
+# 🔹 Loop Through Dictionary
+
+Only Keys
+
+```python
+for key in student:
+    print(key)
+```
+
+Only Values
+
+```python
+for value in student.values():
+    print(value)
+```
+
+Keys & Values
+
+```python
+for key, value in student.items():
+    print(f"{key} : {value}")
+```
+
+---
+
+# 🔹 Set
+
+A set is an unordered collection of unique values.
+
+- Uses {}
+- Unordered
+- Mutable
+- Does NOT allow duplicate values.
+
+Example
+
+```python
+numbers = {1, 2, 3, 4}
+```
+
+---
+
+# 🔹 Duplicate Values
+
+```python
+numbers = {1, 2, 2, 3, 3, 4}
+
+print(numbers)
+```
+
+Output
+
+```
+{1, 2, 3, 4}
+```
+
+Duplicates are automatically removed.
+
+---
+
+# 🔹 Empty Set
+
+Wrong
+
+```python
+data = {}
+```
+
+This creates a dictionary.
+
+Correct
+
+```python
+data = set()
+```
+
+---
+
+# 🔹 add()
+
+Adds a new element.
+
+```python
+fruits.add("Mango")
+```
+
+---
+
+# 🔹 remove()
+
+Removes an element.
+
+```python
+fruits.remove("Banana")
+```
+
+⚠️ Gives **KeyError** if the element doesn't exist.
+
+---
+
+# 🔹 discard()
+
+Removes an element safely.
+
+```python
+fruits.discard("Orange")
+```
+
+If the element doesn't exist, no error is generated.
+
+---
+
+# 🔹 len()
+
+Returns total number of elements.
+
+```python
+print(len(fruits))
+```
+
+---
+
+# 🔹 Loop Through a Set
+
+```python
+for fruit in fruits:
+    print(fruit)
+```
+
+**Note:** Sets are unordered, so the output order may change.
+
+---
+
+# 🔹 union()
+
+Combines two sets and removes duplicates.
+
+```python
+A = {1,2,3}
+B = {3,4,5}
+
+print(A.union(B))
+```
+
+Output
+
+```
+{1,2,3,4,5}
+```
+
+---
+
+# 🔹 intersection()
+
+Returns common elements.
+
+```python
+print(A.intersection(B))
+```
+
+Output
+
+```
+{3}
+```
+
+---
+
+# 🔹 difference()
+
+Returns elements present in the first set but not in the second.
+
+```python
+print(A.difference(B))
+```
+
+Output
+
+```
+{1,2}
+```
+
+```python
+print(B.difference(A))
+```
+
+Output
+
+```
+{4,5}
+```
+
+**Difference depends on the order of the sets.**
+
+---
+
+# ⭐ Interview Questions
+
+### Difference between List and Set
+
+| List | Set |
+|------|-----|
+| Uses [] | Uses {} |
+| Ordered | Unordered |
+| Allows Duplicates | Does Not Allow Duplicates |
+| Access using Index | No Indexing |
+
+---
+
+### Difference between remove() and discard()
+
+| remove() | discard() |
+|-----------|-----------|
+| Gives KeyError if item doesn't exist | No Error if item doesn't exist |
+
+---
+
+### Difference between union() and intersection()
+
+| union() | intersection() |
+|----------|----------------|
+| Combines all unique elements | Returns only common elements |
+
+---
+
+### Difference between Tuple and List
+
+| Tuple | List |
+|--------|------|
+| Uses () | Uses [] |
+| Immutable | Mutable |
+| Ordered | Ordered |
+
+---
+
+# 📝 Mini Project - Student Course Enrollment System
+
+## Concepts Used
+
+- Set
+- add()
+- discard()
+- union()
+- intersection()
+- difference()
+- len()
+- User Input
+
+Example
+
+```python
+python_students = {"Rahul", "Vidita", "Aman"}
+sql_students = {"Vidita", "Rohit", "Priya"}
+
+new_student = input("Enter a new Python student: ")
+python_students.add(new_student)
+
+remove_student = input("Enter student to remove: ")
+
+python_students.discard(remove_student)
+sql_students.discard(remove_student)
+
+print("\n========== COURSE REPORT ==========")
+
+print("Python Students :", python_students)
+print("SQL Students :", sql_students)
+print("All Students :", python_students.union(sql_students))
+print("Learning Both :", python_students.intersection(sql_students))
+print("Only Python :", python_students.difference(sql_students))
+print("Only SQL :", sql_students.difference(python_students))
+print("Total Unique Students :", len(python_students.union(sql_students)))
+
+print("===================================")
+```
+
+---
+
+# 📚 Day 8 Summary
+
+✅ Tuples
+
+✅ Tuple Indexing
+
+✅ Loop Through Tuple
+
+✅ Dictionaries
+
+✅ keys()
+
+✅ values()
+
+✅ items()
+
+✅ get()
+
+✅ Dictionary Mini Project
+
+✅ Sets
+
+✅ add()
+
+✅ remove()
+
+✅ discard()
+
+✅ union()
+
+✅ intersection()
+
+✅ difference()
+
+✅ Student Course Enrollment System Mini Project
+
+---
+
+# 🎯 Key Takeaways
+
+- Tuple is **immutable**.
+- Dictionary stores data in **key-value pairs**.
+- Set stores **only unique values**.
+- `remove()` throws an error if the item doesn't exist.
+- `discard()` removes safely without an error.
+- `union()` combines unique elements.
+- `intersection()` returns common elements.
+- `difference()` returns elements present only in the first set.
+- `len(set)` gives the total number of unique elements.
