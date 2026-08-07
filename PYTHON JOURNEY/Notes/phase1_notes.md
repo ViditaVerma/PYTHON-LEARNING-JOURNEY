@@ -1558,3 +1558,361 @@ print("===================================")
 - `intersection()` returns common elements.
 - `difference()` returns elements present only in the first set.
 - `len(set)` gives the total number of unique elements.
+
+# 🐍 Day 9 - Strings
+
+## What is a String?
+
+A string is a sequence of characters enclosed in single (' ') or double (" ") quotes.
+
+Example:
+
+```python
+name = "Vidita"
+city = 'Delhi'
+```
+
+---
+
+# String Indexing
+
+Each character has an index starting from 0.
+
+Example:
+
+```text
+P  y  t  h  o  n
+0  1  2  3  4  5
+```
+
+```python
+text = "Python"
+
+print(text[0])   # P
+print(text[3])   # h
+print(text[-1])  # n
+```
+
+---
+
+# Negative Indexing
+
+Negative indexing starts from the end.
+
+```text
+ P  y  t  h  o  n
+-6 -5 -4 -3 -2 -1
+```
+
+```python
+text = "Python"
+
+print(text[-1])   # n
+print(text[-3])   # h
+```
+
+---
+
+# String Slicing
+
+Syntax:
+
+```python
+string[start:end]
+```
+
+- Start index is included.
+- End index is excluded.
+
+Examples:
+
+```python
+text = "Python"
+
+print(text[0:3])   # Pyt
+print(text[2:6])   # thon
+print(text[:4])    # Pyth
+print(text[3:])    # hon
+print(text[:])     # Python
+```
+
+---
+
+# len()
+
+Returns the total number of characters.
+
+```python
+text = "Python"
+
+print(len(text))
+```
+
+Output:
+
+```
+6
+```
+
+---
+
+# String Methods
+
+## upper()
+
+Converts all characters to uppercase.
+
+```python
+text = "python"
+
+print(text.upper())
+```
+
+Output:
+
+```
+PYTHON
+```
+
+---
+
+## lower()
+
+Converts all characters to lowercase.
+
+```python
+text = "PYTHON"
+
+print(text.lower())
+```
+
+Output:
+
+```
+python
+```
+
+---
+
+## title()
+
+Capitalizes the first letter of every word.
+
+```python
+text = "data analyst"
+
+print(text.title())
+```
+
+Output:
+
+```
+Data Analyst
+```
+
+---
+
+## capitalize()
+
+Capitalizes only the first letter of the first word.
+
+```python
+text = "hello world"
+
+print(text.capitalize())
+```
+
+Output:
+
+```
+Hello world
+```
+
+---
+
+## strip()
+
+Removes extra spaces from the beginning and end.
+
+```python
+text = "   Python   "
+
+print(text.strip())
+```
+
+Output:
+
+```
+Python
+```
+
+---
+
+## replace()
+
+Replaces one word or character with another.
+
+```python
+text = "I love Excel"
+
+print(text.replace("Excel", "SQL"))
+```
+
+Output:
+
+```
+I love SQL
+```
+
+---
+
+## find()
+
+Returns the index of the first occurrence.
+
+```python
+text = "Python"
+
+print(text.find("t"))
+```
+
+Output:
+
+```
+2
+```
+
+If not found:
+
+```python
+print(text.find("z"))
+```
+
+Output:
+
+```
+-1
+```
+
+---
+
+## count()
+
+Returns how many times a character or word appears.
+
+```python
+text = "banana"
+
+print(text.count("a"))
+```
+
+Output:
+
+```
+3
+```
+
+---
+
+## startswith()
+
+Checks whether a string starts with a specific character or word.
+
+```python
+text = "Python"
+
+print(text.startswith("Py"))
+```
+
+Output:
+
+```
+True
+```
+
+---
+
+## endswith()
+
+Checks whether a string ends with a specific character or word.
+
+```python
+text = "report.pdf"
+
+print(text.endswith(".pdf"))
+```
+
+Output:
+
+```
+True
+```
+
+---
+
+# Important Differences
+
+### upper() vs title()
+
+- upper() → Converts every character to uppercase.
+- title() → Capitalizes the first letter of every word.
+
+---
+
+### find() vs count()
+
+- find() → Returns the index of the first occurrence.
+- count() → Returns how many times a character or word appears.
+
+---
+
+### startswith() vs endswith()
+
+- startswith() → Checks the beginning of the string.
+- endswith() → Checks the ending of the string.
+
+---
+
+# Day 9 Mini Project
+
+## String Formatter & Analyzer
+
+### Concepts Used
+
+- input()
+- print()
+- len()
+- upper()
+- lower()
+- title()
+- capitalize()
+- strip()
+- replace()
+- find()
+- count()
+- startswith()
+- endswith()
+
+### Features
+
+- Accept user's full name.
+- Display the name in different formats.
+- Find string length.
+- Check starting and ending characters.
+- Find the first occurrence of a character.
+- Count character occurrences.
+- Replace words in a sentence.
+- Validate an email using endswith(".com").
+
+---
+
+# Interview Tips
+
+- Strings are immutable (they cannot be changed directly).
+- Indexing starts from 0.
+- Negative indexing starts from -1.
+- Slicing excludes the ending index.
+- find() returns -1 if the value is not found.
+- count() never returns an index.
+- strip() removes spaces only from the beginning and end.
+- startswith() and endswith() return Boolean values (True/False).
