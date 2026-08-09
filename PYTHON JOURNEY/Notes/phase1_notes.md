@@ -1,6 +1,6 @@
 # 📝 Python Notes
 
-## 📅 Day 1 (29 July 2026)
+## 📅 Day 1 
 
 ### ✅ Topics Learned
 
@@ -42,7 +42,7 @@
 * [x] f-Strings
 * [x] Arithmetic Operators
 
-## 📅 Day 2 (30 July 2026)
+## 📅 Day 2 
 
 ### ✅ Topics Learned
 
@@ -88,7 +88,7 @@
 * [x] Comparison Operators
 * [x] Boolean Values
 
-## 📅 Day 3 (31 July 2026)
+## 📅 Day 3 
 
 ### ✅ Topics Learned
 
